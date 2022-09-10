@@ -10,7 +10,7 @@ class program
     {
         // write your code here
         string code = "++++++++++\r\n[\r\n\t>++++++++\r\n\t>++++++++++\r\n\t>+++++++++++\r\n\t>++++++++++\r\n\t>+++++++++++\r\n\t>++++++++++\r\n\t>++++++++++\r\n\t<<<<<<<-\r\n]\r\n\r\n>+++\r\n>---\r\n>---\r\n>+\r\n>----\r\n>++++\r\n>---\r\n\r\n";   
-        int[] memory = new int[30000];
+        byte[] memory = byte int[30000];
 
         executeInput(code.ToCharArray());
         for (int i = 0 ; i < 8 ; i++)
@@ -62,7 +62,7 @@ class program
 
                     case ',':
                         Console.Write("Input at {0} : " , pointer);
-                        memory[pointer] = Convert.ToInt32(Console.ReadLine());
+                        memory[pointer] = Convert.ToByte(Console.ReadLine());
                         break;
 
                     case '[':
